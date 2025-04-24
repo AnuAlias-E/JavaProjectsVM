@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://jakarta.ee/xml/ns/jarkartee">
+
+	<servlet>
+		<servlet-name>First</servlet-name>
+		<servlet-class>com.training.ui.FirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>First</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Second</servlet-name>
+		<servlet-class>com.training.ui.SecondServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Second</servlet-name>
+		<url-pattern>/secondServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>StudentController</servlet-name>
+		<servlet-class>com.training.ui.StudentControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StudentController</servlet-name>
+		<url-pattern>/SCS</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeController</servlet-name>
+		<servlet-class>com.training.ui.EmployeeControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EmployeeController</servlet-name>
+		<url-pattern>/ECS</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>AccountController</servlet-name>
+		<servlet-class>com.training.ui.AccountControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AccountController</servlet-name>
+		<url-pattern>/ACS</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+<servlet>
+		<servlet-name>StudentListController</servlet-name>
+		<servlet-class>com.training.ui.StudentListControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StudentListController</servlet-name>
+		<url-pattern>/SLCS</url-pattern>
+	</servlet-mapping>
+
+</web-app>

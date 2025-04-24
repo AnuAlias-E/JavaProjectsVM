@@ -1,0 +1,21 @@
+package com.training.ui;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.training.bean.Visitor;
+
+@RestController
+public class VisitorInvokerController {
+
+	@GetMapping("/fetchVisitor")
+	public ResponseEntity<Visitor> f1() {
+		int result;
+		String url = "http://localhost:9087/multiply/"+x+"/"+y;
+
+		result = template.postForObject(url,  null,Integer.class);
+		return result;
+		return ResponseEntity.ok(visitor);
+	}
+}

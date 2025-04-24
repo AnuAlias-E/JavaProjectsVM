@@ -1,0 +1,7 @@
+com\training\db\ConnectionManager.class
+com\training\model\Student.class
+com\training\service\StudentServiceImpl.class
+com\training\service\StudentService.class
+com\training\db\StudentMySQLDAO.class
+com\training\ui\StudentManagementController.class
+com\training\db\StudentDAOMySQLImpl.class

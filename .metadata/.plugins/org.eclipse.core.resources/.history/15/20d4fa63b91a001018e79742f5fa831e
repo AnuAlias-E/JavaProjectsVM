@@ -1,0 +1,13 @@
+package com.training.config;
+
+
+import.io.
+public class JwtUtil {
+
+	private String SECRET ="secret";
+	
+	public String generateToken(String userName) {
+		
+	}
+	
+}

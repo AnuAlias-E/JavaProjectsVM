@@ -1,0 +1,28 @@
+package com.training.model;
+
+import java.time.LocalDate;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="invoices")
+public class Invoice {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column
+	int id;
+	
+	@Column
+	LocalDate invoiceDate;
+	
+	@OneToOne(cascade = CascadeType.ALL)
+	Customer customer;
+}

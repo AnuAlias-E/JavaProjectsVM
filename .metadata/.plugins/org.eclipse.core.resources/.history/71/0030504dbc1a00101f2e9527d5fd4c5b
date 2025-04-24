@@ -1,0 +1,17 @@
+package com.training.config;
+import java.util.*;
+public class JwtUtil {
+
+	private String SECRET ="secret";
+	
+	public String generateToken(String userName) {
+		Map<String,Object>claims=new HashMap<>();
+		return createToken(claims,userName);
+	}
+
+	private String createToken(Map<String, Object> claims, String userName) {
+		return Jwts.builder().setClaims(claims)
+				.setSubject(userName)
+	}
+	
+}

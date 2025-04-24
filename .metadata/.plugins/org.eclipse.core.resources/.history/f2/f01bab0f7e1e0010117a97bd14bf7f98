@@ -1,0 +1,18 @@
+package com.training.ui;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.training.model.Employee;
+
+@RestController
+public class EmployeeController {
+
+	@GetMapping("/fetchEmp")
+	public ResponseEntity<List<Employee>> f1(){
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;069-Data Structure Queue/src&apos;&#x0D;&#x0A;- Original project: &apos;052-Map&apos;&#x0D;&#x0A;- Destination element: &apos;069-Data Structure Queue/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     052-Map/src/com.training.model&#x0D;&#x0A;     052-Map/src/com.training.model.comparators" description="Copy packages" destination="=069-Data Structure Queue/src" element1="/src&lt;com.training.model" element2="/src&lt;com.training.model.comparators" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1741060627409" version="1.0"/>
+</session>

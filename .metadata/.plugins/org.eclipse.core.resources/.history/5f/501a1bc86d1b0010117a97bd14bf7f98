@@ -1,0 +1,6 @@
+package com.training;
+
+@Requ
+public class HelloController {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;synchronizedList&apos; from expression &apos;Collections.synchronizedList(new ArrayList&lt;&gt;())&apos;&#x0D;&#x0A;- Original project: &apos;066-Collection in MultiThreading Application&apos;&#x0D;&#x0A;- Variable name: &apos;synchronizedList&apos;&#x0D;&#x0A;- Destination method: &apos;com.training.ui.Main01.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;Collections.synchronizedList(new ArrayList&lt;&gt;())&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;synchronizedList&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.training.ui{Main01.java" name="synchronizedList" replace="true" replaceAllInThisFile="false" selection="226 47" stamp="1740991818402" varType="false" version="1.0"/>
+</session>

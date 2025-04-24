@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;type&apos; in &apos;com.training.dp.FolderIcon&apos; to &apos;color&apos;&#x0D;&#x0A;- Original project: &apos;110-Flyweight Practice&apos;&#x0D;&#x0A;- Original element: &apos;com.training.dp.FolderIcon.type&apos;&#x0D;&#x0A;- Renamed element: &apos;com.training.dp.FolderIcon.color&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;type&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.training.dp{FolderIcon.java[FolderIcon^type" name="color" references="true" setter="false" stamp="1741669261108" textual="false" version="1.0"/>
+</session>

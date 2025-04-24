@@ -1,0 +1,6 @@
+spring.application.name=165-Spring-Boot-EurekaClient1
+server.port=9088
+eureka.client.service-url.defaultZone=http://localhost:9087/eureka/
+
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true

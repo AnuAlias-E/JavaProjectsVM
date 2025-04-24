@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;117-Test Driven Testing&apos; to &apos;117-Test Driven Development&apos;&#x0D;&#x0A;- Original element: &apos;117-Test Driven Testing&apos;&#x0D;&#x0A;- Renamed element: &apos;117-Test Driven Testing&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;117-Test Driven Testing&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=117-Test Driven Testing" name="117-Test Driven Development" references="true" stamp="1741855397674" version="1.0"/>
+</session>

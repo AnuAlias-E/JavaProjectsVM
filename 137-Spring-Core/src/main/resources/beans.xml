@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-3.2.xsd 
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.2.xsd 
+	http://www.springframework.org/schema/jee 
+	http://www.springframework.org/schema/jee/spring-jee-3.2.xsd 
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-3.2.xsd 
+	http://www.springframework.org/schema/task 
+	http://www.springframework.org/schema/task/spring-task-3.2.xsd">
+
+	<bean id="circleBean" class="com.training.model.Circle">
+		<property name="size" value="10"></property>
+	</bean>
+
+	<bean id="squareBean" class="com.training.model.Square">
+		<property name="size" value="20"></property>
+	</bean>
+	<bean id="rectangleBean" class="com.training.model.Rectangle">
+		<property name="size" value="5"></property>
+	</bean>
+	<bean id="helloWorldBean" class="com.training.model.HelloWorld"
+		scope="prototype">
+		<property name="message" value="Welcome to Spring World !!!"></property>
+	</bean>
+	<bean id="studentBean" class="com.training.model.Student"
+		scope="prototype"></bean>
+
+
+	<bean id="employeeBean" class="com.training.model.Employee">
+
+		<property name="id" value="1001"></property>
+		<property name="name" value="Anu Alias"></property>
+		<property name="basicSalary" value="10000.0"></property>
+		<property name="manager" value="true"></property>
+		<property name="gender" value="F"></property>
+		<property name="grade" value="A"></property>
+
+	</bean>
+	<bean id="empManagementBean"
+		class="com.training.model.EmployeeManagement" init-method="initialize"
+		destroy-method="cleanUp">
+	</bean>
+
+	<bean id="itemBean" class="com.training.model.Item">
+
+		<property name="itemName" value="Dell"></property>
+		<property name="price" value="38000.0"></property>
+		<property name="priceHistory">
+			<list>
+				<value>45000</value>
+				<value>58000</value>
+				<value>66000</value>
+			</list>
+
+		</property>
+
+	</bean>
+
+
+	<bean id="personBean" class="com.training.model.Person">
+
+		<property name="name" value="Anu Alias"></property>
+		<property name="age" value="40"></property>
+		<property name="emailIds">
+			<list>
+				<value>anu.alias@gmail.com</value>
+				<value>anu@gmail.com</value>
+				<value>anu2@gmail.com</value>
+			</list>
+
+		</property>
+		<property name="contactNumbers">
+			<list>
+				<value>4567883322</value>
+				<value>4567324578</value>
+				<value>4567623456</value>
+			</list>
+
+		</property>
+	</bean>
+
+	<bean id="answer1" class="com.training.model.AnswerChoice">
+		<property name="answerText" value="10"></property>
+		<property name="rightChoice" value="false"></property>
+	</bean>
+	<bean id="answer2" class="com.training.model.AnswerChoice">
+		<property name="answerText" value="8"></property>
+		<property name="rightChoice" value="true"></property>
+	</bean>
+
+	<bean id="answer3" class="com.training.model.AnswerChoice">
+		<property name="answerText" value="4"></property>
+		<property name="rightChoice" value="false"></property>
+	</bean>
+
+	<bean id="questionBean" class="com.training.model.Question">
+		<property name="questionText"
+			value="How many built in type are available in Java?"></property>
+		<property name="score" value="2"></property>
+		<property name="choices">
+			<list>
+				<ref bean="answer1"></ref>
+				<ref bean="answer2"></ref>
+				<ref bean="answer3"></ref>
+			</list>
+
+		</property>
+	</bean>
+
+
+
+	<bean id="address" class="com.training.model.Address">
+		<property name="doorNo" value="DF-No1"></property>
+		<property name="city" value="Delhi"></property>
+		<property name="pinCode" value="100011"></property>
+	</bean>
+
+	<bean id="account" class="com.training.model.Account">
+		<property name="accId" value="10101"></property>
+		<property name="type" value="Savings"></property>
+		<property name="balance" value="50000.00"></property>
+	</bean>
+
+
+	<bean id="carLoanBean" class="com.training.model.CarLoan">
+		<property name="loanAmt" value="128000.00"></property>
+	</bean>
+
+	<bean id="loan" class="com.training.model.HomeLoan">
+		<property name="loanAmt" value="500000.00"></property>
+	</bean>
+
+	<bean id="customerBean" class="com.training.model.Customer"
+		autowire="byName">
+		<property name="id" value="50001"></property>
+		<property name="name" value="Anu Alias"></property>
+	</bean>
+
+	<bean id="engine" class="com.training.model.Engine">
+		<property name="engineType" value="V-Shaped"></property>
+		<property name="capacity" value="78"></property>
+		<property name="fuelType" value="Pertol"></property>
+	</bean>
+
+	<bean id="wheels" class="com.training.model.Wheel">
+		<property name="size" value="20"></property>
+		<property name="brand" value="Appollo"></property>
+		<property name="material" value="Steel"></property>
+	</bean>
+
+	<bean id="carBean" class="com.training.model.Car"
+		autowire="byName">
+		<property name="model" value="Kia Seltos"></property>
+		<property name="color" value="Red"></property>
+		<property name="doors" value="4"></property>
+	</bean>
+
+	<bean id="salesEmployeeBean"
+		class="com.training.model.SalesEmployee">
+		<constructor-arg value="1001" index="0"></constructor-arg>
+		<constructor-arg value="Anu Alias" index="1"></constructor-arg>
+		<constructor-arg value="20000.00" index="2"></constructor-arg>
+		<constructor-arg ref="address" ></constructor-arg>
+	</bean>
+	
+	<bean id="studentBean1"
+		class="com.training.model.Student">
+		<constructor-arg value="1001" index="0"></constructor-arg>
+		<constructor-arg value="Anu Alias" index="1"></constructor-arg>
+		<constructor-arg ref="contact" ></constructor-arg>
+	</bean>
+	
+	<bean id="contact"
+		class="com.training.model.Contact">
+		<constructor-arg value="anu@gmail.com" index="0"></constructor-arg>
+		<constructor-arg value="4432145552" index="1"></constructor-arg>
+	</bean>
+</beans>

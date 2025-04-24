@@ -1,0 +1,97 @@
+package com.training.ui;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
+
+import com.training.model.Contact;
+import com.training.model.Product;
+
+public class Main02 {
+
+	public static void insert() {
+		
+		Product product1 = new Product(101, "Dell", 50000.00, "Phone");
+		Product product2 = new Product(102, "IPhone", 100000.00, "Phone");
+		Product product3 = new Product(103, "Samsung", 34000.00, "Phone");
+		Product product4 = new Product(104, "LG", 20000.00, "TV");
+		Product product5 = new Product(105, "Sony", 75000.00, "TV");
+		List<Product>pdtList= new ArrayList<>()	;
+		pdtList.add(product1);
+		pdtList.add(product2);
+		pdtList.add(product3);
+		pdtList.add(product4);
+		pdtList.add(product5);
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.getTransaction().begin();
+		for(Product product :pdtList) {
+		
+		session.persist(product);
+		session.close();
+		}
+		session.getTransaction().commit();
+		sessionFactory.close();
+	}
+
+	public static void read() {
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		Session session = sessionFactory.openSession();
+
+		Product product;
+		product = session.find(Product.class, 101);
+		System.out.println(product);
+
+		session.close();
+		sessionFactory.close();
+	}
+
+	public static void update() {
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		Session session = sessionFactory.openSession();
+
+		Product product = session.find(Product.class, 101);
+		product.setName(product.getName().toUpperCase());
+
+		session.getTransaction().begin();
+		session.merge(product);
+		session.getTransaction().commit();
+
+		session.close();
+		sessionFactory.close();
+	}
+
+	public static void readAll() {
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		Session session = sessionFactory.openSession();
+
+		String str = "from Product";// HQL Query
+		Query<Product> query = session.createQuery(str, Product.class);
+		List<Product> productList = query.getResultList();
+		System.out.println(productList);
+
+		session.close();
+		sessionFactory.close();
+	}
+
+	public static void delete() {
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		Session session = sessionFactory.openSession();
+
+		Product product = session.find(Product.class, 103);
+
+		session.getTransaction().begin();
+		session.remove(product);
+		session.getTransaction().commit();
+
+		session.close();
+		sessionFactory.close();
+	}
+	public static void main(String[] args) {
+		insert();
+	}
+}

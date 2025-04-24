@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;083-After SRP/src&apos;&#x0D;&#x0A;- Original project: &apos;082-Before SRP&apos;&#x0D;&#x0A;- Destination element: &apos;083-After SRP/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     082-Before SRP/src/com.training.ui&#x0D;&#x0A;     082-Before SRP/src/com.training.model" description="Copy packages" destination="=083-After SRP/src" element1="/src&lt;com.training.ui" element2="/src&lt;com.training.model" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1741251333812" version="1.0"/>
+</session>

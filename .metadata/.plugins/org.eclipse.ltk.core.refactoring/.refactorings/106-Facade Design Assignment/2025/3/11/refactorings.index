@@ -1,0 +1,5 @@
+1741601283657	Extract local variable 'isRoomBookingAvailable'
+1741601332678	Extract local variable 'roomsAvailable'
+1741601409097	Extract local variable 'roomBooked'
+1741601639165	Extract local variable 'costForHotelBooking'
+1741601731887	Extract local variable 'foodCost'

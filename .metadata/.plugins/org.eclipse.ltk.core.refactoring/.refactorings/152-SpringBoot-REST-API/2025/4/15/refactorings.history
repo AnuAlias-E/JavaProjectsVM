@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;optional&apos; from expression &apos;repo.findById(visitorId)&apos;&#x0D;&#x0A;- Original project: &apos;152-SpringBoot-REST-API&apos;&#x0D;&#x0A;- Variable name: &apos;optional&apos;&#x0D;&#x0A;- Destination method: &apos;com.training.service.VisitorService.searchVisitor(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;repo.findById(visitorId)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;optional&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.training.service{VisitorService.java" name="optional" replace="true" replaceAllInThisFile="false" selection="583 24" stamp="1744346204062" varType="false" version="1.0"/>
+</session>

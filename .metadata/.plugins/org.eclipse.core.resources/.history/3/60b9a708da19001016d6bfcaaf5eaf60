@@ -1,0 +1,5 @@
+package com.training.dto.exception;
+
+public class VisitorNotFoundException {
+
+}

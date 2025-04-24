@@ -1,0 +1,18 @@
+package com.training.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.training.db.AppUserRepository;
+import com.training.model.AppUser;
+
+@Service
+public class AppUserService {
+	@Autowired
+	AppUserRepository repo;
+
+	public AppUser addUser(AppUser appUser) {
+		return repo.save(appUser);
+	}
+
+}

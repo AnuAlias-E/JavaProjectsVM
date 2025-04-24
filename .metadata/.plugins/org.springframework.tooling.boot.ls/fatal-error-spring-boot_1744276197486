@@ -1,0 +1,240 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1073741824 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3616), pid=78844, tid=77560
+#
+# JRE version:  (21.0.5+11) (build )
+# Java VM: OpenJDK 64-Bit Server VM (21.0.5+11-LTS, mixed mode, emulated-client, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Core dump will be written. Default location: C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\hs_err_pid78844.mdmp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dsts.lsp.client=eclipse -Xmx1024m -XX:TieredStopAtLevel=1 -Dspring.config.location=classpath:/application.properties -Xlog:jni+resolve=off -XX:ErrorFile=C:/JavaProjects_AnuAlias/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1744276197486 -Dlanguageserver.hover-timeout=225 C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+
+Host: Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz, 16 cores, 79G,  Windows Server 2022 , 64 bit Build 20348 (10.0.20348.3089)
+Time: Thu Apr 10 14:39:57 2025 India Standard Time elapsed time: 0.071561 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001d8d8efbff0):  JavaThread "Unknown thread" [_thread_in_vm, id=77560, stack(0x0000006690900000,0x0000006690a00000) (1024K)]
+
+Stack: [0x0000006690900000,0x0000006690a00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6cd4e9]
+V  [jvm.dll+0x8a7941]
+V  [jvm.dll+0x8a9e6e]
+V  [jvm.dll+0x8aa543]
+V  [jvm.dll+0x27f6d6]
+V  [jvm.dll+0x6c9c25]
+V  [jvm.dll+0x6be84a]
+V  [jvm.dll+0x355c6a]
+V  [jvm.dll+0x35d836]
+V  [jvm.dll+0x3af40e]
+V  [jvm.dll+0x3af6b8]
+V  [jvm.dll+0x329dfc]
+V  [jvm.dll+0x32a95b]
+V  [jvm.dll+0x870ba9]
+V  [jvm.dll+0x3bc1e1]
+V  [jvm.dll+0x859cd3]
+V  [jvm.dll+0x4504ee]
+V  [jvm.dll+0x452131]
+C  [jli.dll+0x5278]
+C  [ucrtbase.dll+0x26b4c]
+C  [KERNEL32.DLL+0x14cb0]
+C  [ntdll.dll+0x7edcb]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007fffaf7d90c8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x000001d8db210020 WorkerThread "GC Thread#0"                     [id=67384, stack(0x0000006690a00000,0x0000006690b00000) (1024K)]
+  0x000001d8db219000 ConcurrentGCThread "G1 Main Marker"            [id=61224, stack(0x0000006690b00000,0x0000006690c00000) (1024K)]
+  0x000001d8db219cb0 WorkerThread "G1 Conc#0"                       [id=68020, stack(0x0000006690c00000,0x0000006690d00000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fffaeedc727]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fffaf84d480] Heap_lock - owner thread: 0x000001d8d8efbff0
+
+Heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x00000000c0000000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fffaf2c6f49]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.047 Loaded shared library C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff652830000 - 0x00007ff65283e000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\javaw.exe
+0x00007ff815860000 - 0x00007ff815a61000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff8138a0000 - 0x00007ff81395e000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ff812dc0000 - 0x00007ff813130000 	C:\Windows\System32\KERNELBASE.dll
+0x000000006deb0000 - 0x000000006df5e000 	C:\Windows\System32\SYSFER.DLL
+0x00007ff8132f0000 - 0x00007ff813400000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffffba00000 - 0x00007ffffba18000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\jli.dll
+0x00007ff814f50000 - 0x00007ff8150f5000 	C:\Windows\System32\USER32.dll
+0x00007ff813130000 - 0x00007ff813156000 	C:\Windows\System32\win32u.dll
+0x00007ff815740000 - 0x00007ff81576c000 	C:\Windows\System32\GDI32.dll
+0x00007ff813540000 - 0x00007ff81365b000 	C:\Windows\System32\gdi32full.dll
+0x00007ff8136d0000 - 0x00007ff813770000 	C:\Windows\System32\msvcp_win.dll
+0x00007ff8009a0000 - 0x00007ff8009be000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\VCRUNTIME140.dll
+0x00007ff8046f0000 - 0x00007ff804995000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.20348.2849_none_947683b1eef1cae2\COMCTL32.dll
+0x00007ff814500000 - 0x00007ff8145a3000 	C:\Windows\System32\msvcrt.dll
+0x00007ff8157e0000 - 0x00007ff815811000 	C:\Windows\System32\IMM32.DLL
+0x00007ff810d80000 - 0x00007ff810d8c000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\vcruntime140_1.dll
+0x00007fffdab00000 - 0x00007fffdab8d000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\msvcp140.dll
+0x00007fffaeba0000 - 0x00007fffaf92f000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\server\jvm.dll
+0x00007ff814670000 - 0x00007ff814721000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ff815520000 - 0x00007ff8155c2000 	C:\Windows\System32\sechost.dll
+0x00007ff8132c0000 - 0x00007ff8132e7000 	C:\Windows\System32\bcrypt.dll
+0x00007ff813770000 - 0x00007ff81388e000 	C:\Windows\System32\RPCRT4.dll
+0x00007ff8143f0000 - 0x00007ff814461000 	C:\Windows\System32\WS2_32.dll
+0x00007ff8118b0000 - 0x00007ff8118fd000 	C:\Windows\SYSTEM32\POWRPROF.dll
+0x00007ff8049b0000 - 0x00007ff8049d7000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff8049a0000 - 0x00007ff8049aa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff811980000 - 0x00007ff811993000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007ff811690000 - 0x00007ff8116a7000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ff800b20000 - 0x00007ff800b2a000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\jimage.dll
+0x00007ff804fa0000 - 0x00007ff8051b1000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff801e30000 - 0x00007ff801e60000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ff8134c0000 - 0x00007ff81353f000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffffa270000 - 0x00007ffffa28f000 	C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.20348.2849_none_947683b1eef1cae2;C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\server
+
+VM Arguments:
+jvm_args: -Dsts.lsp.client=eclipse -Xmx1024m -XX:TieredStopAtLevel=1 -Dspring.config.location=classpath:/application.properties -Xlog:jni+resolve=off -XX:ErrorFile=C:/JavaProjects_AnuAlias/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1744276197486 -Dlanguageserver.hover-timeout=225 
+java_command: C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+java_class_path (initial): C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 12                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+    ccstr ErrorFile                                = C:/JavaProjects_AnuAlias/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1744276197486            {product} {command line}
+     uint G1ConcRefinementThreads                  = 13                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 1073741824                                {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1073741824                                {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 4096                                   {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 0                                      {pd product} {ergonomic}
+     bool ProfileInterpreter                       = false                                  {pd product} {command line}
+    uintx ProfiledCodeHeapSize                     = 0                                      {pd product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 1073741824                             {manageable} {ergonomic}
+     intx TieredStopAtLevel                        = 1                                         {product} {command line}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning,jni+resolve=off uptime,level,tags foldmultilines=false (reconfigured)
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-17
+PATH=C:/spring-tool-suite_devops4/sts-4.27.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957/jre/bin/server;C:/spring-tool-suite_devops4/sts-4.27.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957/jre/bin;C:\Program Files\Java\jdk-17\bin;C:\Users\devops4\AppData\Local\Microsoft\WindowsApps;;C:\spring-tool-suite_devops4\sts-4.27.0.RELEASE;
+USERNAME=devops4
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 26 Stepping 5, GenuineIntel
+TMP=C:\Users\devops4\AppData\Local\Temp\12
+TEMP=C:\Users\devops4\AppData\Local\Temp\12
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows Server 2022 , 64 bit Build 20348 (10.0.20348.3089)
+OS uptime: 2 days 17:46 hours
+Hyper-V role detected
+
+CPU: total 16 (initial active 16) (4 cores per cpu, 2 threads per core) family 6 model 26 stepping 5 microcode 0x1d, cx8, cmov, fxsr, ht, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, tsc, tscinvbit, clflush, hv, rdtscp
+Processor Information for all 16 processors :
+  Max Mhz: 2261, Current Mhz: 2261, Mhz Limit: 2261
+
+Memory: 4k page, system-wide physical 81875M (18516M free)
+TotalPageFile size 119272M (AvailPageFile size 272M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 65M, peak: 1089M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.5+11-LTS) for windows-amd64 JRE (21.0.5+11-LTS), built on 2024-10-15T00:00:00Z by "admin" with MS VC++ 17.7 (VS2022)
+
+END.

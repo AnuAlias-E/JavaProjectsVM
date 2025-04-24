@@ -1,0 +1,14 @@
+spring.application.name=175-Spring-Boot-API-Gateway
+
+server.port=9099
+eureka.client.service-url.defaultZone=http://localhost:9006/eureka/
+
+spring.cloud.gateway.routes[0].id=helloservice
+spring.cloud.gateway.routes[0].uri=lb://HelloService
+spring.cloud.gateway.routes[0].predicates[0]=Path=helloapi/**
+spring.cloud.gateway.routes[0].filters[0]=StripPrefix=1
+
+spring.cloud.gateway.routes[1].id=WelcomeService
+spring.cloud.gateway.routes[1].uri=lb://WelcomeService
+spring.cloud.gateway.routes[1].predicates[0]=Path=welcomeapi/**
+spring.cloud.gateway.routes[1].filters[0]=StripPrefix=1

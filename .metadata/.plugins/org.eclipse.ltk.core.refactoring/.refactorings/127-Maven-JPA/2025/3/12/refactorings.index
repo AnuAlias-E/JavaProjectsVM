@@ -1,0 +1,11 @@
+1742454994963	Delete element
+1742455243509	Rename resource 'persistance.xml'
+1742460042833	Delete element
+1742460778112	Delete element
+1742460995624	Delete element
+1742461233510	Delete element
+1742461874493	Delete element
+1742463880394	Rename local variable 'entityManagerFactory'
+1742463904411	Rename local variable 'entityManager'
+1742468968083	Delete element
+1742470210373	Extract local variable 'query'

@@ -1,0 +1,2 @@
+spring.application.name=177-Spring-Boot-Circuit-Breakers
+server.port=9087

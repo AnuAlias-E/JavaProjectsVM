@@ -1,0 +1,46 @@
+package com.training.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.training.db.InvoiceRepository;
+import com.training.model.Invoice;
+
+@Service
+public class InvoiceService {
+
+	@Autowired
+	InvoiceRepository repo;
+	
+	public Invoice addNewInvoice(Invoice invoice) {
+		Optional<Invoice> existCustomer=	findByCustomerId(invoice.getCustomer().getId());
+		return repo.save(invoice);
+	}
+	
+	public Invoice updateInvoice(Invoice invoice) {
+		return repo.save(invoice);
+	}
+	
+	public Invoice getInvoiceById(int invoiceId) {
+		return repo.findById(invoiceId).orElse(null);
+	}
+	
+	public List<Invoice> getAllInvoices() {
+		return repo.findAll();
+	}
+	
+	
+	public boolean deleteInvoice(Invoice invoice) {
+		 repo.delete(invoice);
+		if(!repo.existsById(invoice.getId())) {
+			
+			return true;
+		}
+		return false;
+	}
+	
+	
+}

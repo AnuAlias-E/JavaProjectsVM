@@ -1,0 +1,20 @@
+package com.training.dto.request;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.training.model.Visitor;
+
+public class VisitorAddRequest {
+@Autowired
+Visitor visitor;
+
+public Visitor getVisitor() {
+	return visitor;
+}
+
+public void setVisitor(Visitor visitor) {
+	this.visitor = visitor;
+}
+
+
+}

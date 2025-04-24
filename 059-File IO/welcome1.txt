@@ -1,0 +1,6 @@
+Java 8 has awesome Features
+Functional Interface
+Optional
+Stream API
+Lambda
+Default Method in Interface

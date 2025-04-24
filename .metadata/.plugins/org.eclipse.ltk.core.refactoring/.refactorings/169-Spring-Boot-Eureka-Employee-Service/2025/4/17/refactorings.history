@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.training.model&apos; to &apos;170-Spring-Boot-Eureka-Employee-Invoker/src/main/java/com.training.ui&apos;&#x0D;&#x0A;- Original project: &apos;169-Spring-Boot-Eureka-Employee-Service&apos;&#x0D;&#x0A;- Destination element: &apos;170-Spring-Boot-Eureka-Employee-Invoker/src/main/java/com.training.ui&apos;&#x0D;&#x0A;- Original element: &apos;169-Spring-Boot-Eureka-Employee-Service/src/main/java/com.training.model&apos;" description="Copy package" destination="=170-Spring-Boot-Eureka-Employee-Invoker/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.training.ui" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.training.model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1745225206795" version="1.0"/>
+</session>

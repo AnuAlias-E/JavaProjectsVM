@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>130-Student-CRUD-Web</display-name>
+  <servlet>
+		<servlet-name>ListStudentsController</servlet-name>
+		<servlet-class>com.training.ui.ListStudentsControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListStudentsController</servlet-name>
+		<url-pattern>/ListStudents</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>AddStudentInputScreenController</servlet-name>
+		<servlet-class>com.training.ui.AddStudentInputScreenControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddStudentInputScreenController</servlet-name>
+		<url-pattern>/AddStudent1</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>StudentAddingController</servlet-name>
+		<servlet-class>com.training.ui.StudentAddingControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StudentAddingController</servlet-name>
+		<url-pattern>/AddStudent2</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>ListStudentsForUpdateController</servlet-name>
+		<servlet-class>com.training.ui.ListStudentsForUpdateControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListStudentsForUpdateController</servlet-name>
+		<url-pattern>/UpdateStudent1</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+		<servlet-name>FetchStudentForUpdateController</servlet-name>
+		<servlet-class>com.training.ui.FetchStudentForUpdateControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FetchStudentForUpdateController</servlet-name>
+		<url-pattern>/UpdateStudent2</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>UpdateStudentController</servlet-name>
+		<servlet-class>com.training.ui.UpdateStudentControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateStudentController</servlet-name>
+		<url-pattern>/UpdateStudent3</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ListStudentsforDeleteController</servlet-name>
+		<servlet-class>com.training.ui.ListStudentsforDeleteControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListStudentsforDeleteController</servlet-name>
+		<url-pattern>/DeleteStudent1</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>FetchStudentForDeleteController</servlet-name>
+		<servlet-class>com.training.ui.FetchStudentForDeleteControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FetchStudentForDeleteController</servlet-name>
+		<url-pattern>/DeleteStudent2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StudentDeleteController</servlet-name>
+		<servlet-class>com.training.ui.StudentDeleteControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StudentDeleteController</servlet-name>
+		<url-pattern>/DeleteStudent3</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>FrontController</servlet-name>
+		<servlet-class>com.training.ui.FrontControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FrontController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+</web-app>

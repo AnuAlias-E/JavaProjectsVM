@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;queue&apos; in &apos;com.training.ui.Main3.main(...)&apos; to &apos;names&apos;&#x0D;&#x0A;- Original project: &apos;154-Queue&apos;&#x0D;&#x0A;- Original element: &apos;com.training.ui.Main3.main(String[]).queue&apos;&#x0D;&#x0A;- Renamed element: &apos;queue&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;queue&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.training.ui{Main3.java[Main3~main~\[QString;@queue!130!157!152!156!QPriorityQueue\&lt;QString;&gt;;!0!false" name="names" references="true" stamp="1744368957833" version="1.0"/>
+</session>

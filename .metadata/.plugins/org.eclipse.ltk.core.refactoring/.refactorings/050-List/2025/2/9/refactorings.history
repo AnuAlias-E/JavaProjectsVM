@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;051-Set/src&apos;&#x0D;&#x0A;- Original project: &apos;050-List&apos;&#x0D;&#x0A;- Destination element: &apos;051-Set/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     050-List/src/com.training.model.comparators&#x0D;&#x0A;     050-List/src/com.training.model" description="Copy packages" destination="=051-Set/src" element1="/src&lt;com.training.model.comparators" element2="/src&lt;com.training.model" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1740467397077" version="1.0"/>
+</session>

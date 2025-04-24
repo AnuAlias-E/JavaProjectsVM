@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;threadName&apos; from expression &apos;thread.getName()&apos;&#x0D;&#x0A;- Original project: &apos;062-MultiThreading&apos;&#x0D;&#x0A;- Variable name: &apos;threadName&apos;&#x0D;&#x0A;- Destination method: &apos;com.training.ui.Main01.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;thread.getName()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;threadName&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.training.ui{Main01.java" name="threadName" replace="true" replaceAllInThisFile="false" selection="238 16" stamp="1740716123045" varType="false" version="1.0"/>
+</session>

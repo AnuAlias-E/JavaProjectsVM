@@ -1,0 +1,4 @@
+spring.application.name=174-Spring-Boot-API-Gateway
+
+server.port=9099
+eureka.client.service-url.defaultZone=http://localhost:9006/eureka/

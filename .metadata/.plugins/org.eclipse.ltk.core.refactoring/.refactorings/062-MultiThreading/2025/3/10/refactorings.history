@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;064-Thread States/src&apos;&#x0D;&#x0A;- Original project: &apos;062-MultiThreading&apos;&#x0D;&#x0A;- Destination element: &apos;064-Thread States/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     062-MultiThreading/src/com.training.task&#x0D;&#x0A;     062-MultiThreading/src/com.training.workers" description="Copy packages" destination="=064-Thread States/src" element1="/src&lt;com.training.task" element2="/src&lt;com.training.workers" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1740974427602" version="1.0"/>
+</session>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+
+<hibernate-mapping>
+    <class name="com.training.model.Product" table="Products">
+        <id name="id" column="product_id"></id>
+        <property name="name" column="product_name"></property>
+        <property name="price" column="product_price"></property>
+        <property name="category" column="product_category"></property>
+    </class>
+</hibernate-mapping>

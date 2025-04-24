@@ -1,0 +1,7 @@
+spring.application.name=177-Spring-Boot-Circuit-Breakers
+server.port=9087
+
+management.health.circuitbreakers.enabled=true
+management.endpoints.web.exposure.include=*
+management.endpoint.health.show-details=always
+

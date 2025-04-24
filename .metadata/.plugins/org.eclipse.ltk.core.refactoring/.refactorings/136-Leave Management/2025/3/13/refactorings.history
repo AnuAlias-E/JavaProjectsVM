@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void createLeaveApplication(String role, String loginName)&apos; from &apos;com.training.ui.Main.main(...)&apos; to &apos;com.training.ui.Main&apos;&#x0D;&#x0A;- Original project: &apos;136-Leave Management&apos;&#x0D;&#x0A;- Method name: &apos;createLeaveApplication&apos;&#x0D;&#x0A;- Destination type: &apos;com.training.ui.Main&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;createLeaveApplication&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.training.ui{Main.java" name="createLeaveApplication" replace="false" selection="957 294" stamp="1743074861699" version="1.0" visibility="2"/>
+</session>

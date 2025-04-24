@@ -1,0 +1,2 @@
+spring.application.name=176-Spring-Boot-Actuators
+server.port=9087

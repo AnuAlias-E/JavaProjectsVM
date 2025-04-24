@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;account&apos; from expression &apos;accountFactory.createAccount()&apos;&#x0D;&#x0A;- Original project: &apos;101-Factory Method Design Assignment&apos;&#x0D;&#x0A;- Variable name: &apos;account&apos;&#x0D;&#x0A;- Destination method: &apos;com.training.ui.Main.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;accountFactory.createAccount()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;account&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.training.ui{Main.java" name="account" replace="true" replaceAllInThisFile="false" selection="211 30" stamp="1741346785875" varType="false" version="1.0"/>
+</session>

@@ -1,0 +1,2 @@
+spring.application.name=159-SpringBoot-JPA-1
+server.port=9080

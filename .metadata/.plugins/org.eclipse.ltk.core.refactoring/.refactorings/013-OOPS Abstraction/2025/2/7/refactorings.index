@@ -1,0 +1,4 @@
+1739164048569	Extract local variable 'areaOfC2'
+1739169707367	Rename method 'total'
+1739169727834	Rename method 'average'
+1739172586879	Extract method 'showDetails'

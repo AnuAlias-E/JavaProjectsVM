@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+
+<hibernate-mapping>
+    <class name="com.training.model.Contact" table="Contacts">
+        <id name="id" column="contact_id"></id>
+        <property name="name" column="contact_name"></property>
+        <property name="emailid" column="contact_email"></property>
+        <property name="phone" column="contact_phone"></property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,10 @@
+1739772587241	Extract local variable 'c1'
+1739772630576	Extract local variable 'r'
+1739772954496	Extract local variable 'c1'
+1739772964367	Extract local variable 'c2'
+1739772976612	Extract local variable 'c3'
+1739773858520	Rename package 'com.training.comparator'
+1739791084457	Copy package
+1739791100231	Copy package
+1739852943009	Copy compilation unit
+1739852947885	Delete element

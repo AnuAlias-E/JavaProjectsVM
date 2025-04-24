@@ -1,0 +1,9 @@
+1740127022676	Delete element
+1740129521224	Extract local variable 'compareTo'
+1740129578966	Extract local variable 'r'
+1740130292610	Extract local variable 'billItem'
+1740133195431	Rename local variable 'youngerAgePerson'
+1740133315590	Rename local variable 'elderAgePerson'
+1740136460626	Extract local variable 'e'
+1740137434073	Extract local variable 'netSalary'
+1740137499940	Extract local variable 'gender'

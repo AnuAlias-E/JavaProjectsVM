@@ -1,0 +1,5 @@
+package com.training.dto.response;
+
+public class AppUserAuthenticateResponse {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;total&apos; from expression &apos;&quot;Total : &quot; + mark1 + mark2&apos;&#x0D;&#x0A;- Original project: &apos;025-Object Class&apos;&#x0D;&#x0A;- Variable name: &apos;total&apos;&#x0D;&#x0A;- Destination method: &apos;pack1.Student.getTotal()&apos;&#x0D;&#x0A;- Variable expression: &apos;&quot;Total : &quot; + mark1 + mark2&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;total&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;pack1{Student.java" name="total" replace="true" replaceAllInThisFile="false" selection="885 11" stamp="1739361714070" varType="false" version="1.0"/>
+</session>

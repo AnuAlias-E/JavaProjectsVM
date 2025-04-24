@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+C:\JavaProjects_AnuAlias\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3158247651.index
+1812786131.index
+1167488913.index
+1725295610.index
+3122738921.index
+315004832.index
+2694877536.index
+3708466488.index
+514993104.index
+727153000.index
+3100462877.index
+2059611139.index
