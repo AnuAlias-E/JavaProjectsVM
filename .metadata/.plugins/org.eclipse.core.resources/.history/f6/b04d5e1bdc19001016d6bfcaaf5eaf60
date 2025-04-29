@@ -1,5 +1,0 @@
-package com.training.advice;
-
-public class GlobalExceptionHandler {
-
-}

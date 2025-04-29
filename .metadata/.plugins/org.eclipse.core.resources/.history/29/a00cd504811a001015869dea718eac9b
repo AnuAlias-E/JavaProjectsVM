@@ -1,5 +1,0 @@
-package com.training.db;
-
-public interface CustomerRepository {
-
-}

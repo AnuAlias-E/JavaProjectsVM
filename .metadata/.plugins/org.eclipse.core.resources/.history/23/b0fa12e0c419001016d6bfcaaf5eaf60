@@ -1,7 +1,0 @@
-package com.training.dto.response;
-
-public class VisitorDeleteResponse {
-	int statusCode;
-	String description;
-	boolean status;
-}

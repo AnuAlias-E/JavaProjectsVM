@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,7 +38,7 @@ public class CustomerController {
 	CustomerService service;
 
 	@PostMapping(value = "/add", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
-	public ResponseEntity<CustomerAddResponse> addVisitor(@RequestBody CustomerAddRequest request) {
+	public ResponseEntity<CustomerAddResponse> addVisitor( @RequestBody CustomerAddRequest request) {
 		CustomerAddResponse addResponse = new CustomerAddResponse();
 
 		Customer customer = service.addNewCustomer(request.getCustomer());
@@ -48,7 +49,7 @@ public class CustomerController {
 	}
 
 	@PutMapping(value = "/modify")
-	public ResponseEntity<CustomerAddResponse> updateVisitor(@RequestBody CustomerUpdateRequest request) {
+	public ResponseEntity<CustomerAddResponse> updateVisitor(@RequestBody CustomerUpdateRequest request) throws CustomerNotFoundException {
 		CustomerAddResponse response = new CustomerAddResponse();
 
 		Customer customer = service.getCustomerById(request.getCustomer().getId());
@@ -103,7 +104,7 @@ public class CustomerController {
 	}
 
 	@DeleteMapping(value = "/delete")
-	public ResponseEntity<CustomerDeleteResponse> deleteVisitor(@RequestBody CustomerDeleteRequest request) {
+	public ResponseEntity<CustomerDeleteResponse> deleteVisitor(@RequestBody CustomerDeleteRequest request) throws CustomerNotFoundException {
 		CustomerDeleteResponse deleteResponse = new CustomerDeleteResponse();
 
 		Customer customer = this.service.getCustomerById(request.getCustomer().getId());

@@ -21,7 +21,7 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="11"/>
+		<item key="DIALOG_X_ORIGIN" value="700"/>
 		<item key="DIALOG_Y_ORIGIN" value="143"/>
 		<item key="DIALOG_WIDTH" value="875"/>
 		<item key="DIALOG_HEIGHT" value="888"/>
@@ -36,7 +36,7 @@
 	</section>
 	<section name="completion_proposal_size">
 		<item key="size.x" value="1521"/>
-		<item key="size.y" value="544"/>
+		<item key="size.y" value="545"/>
 		<item key="contextSelector.size.x" value="346"/>
 		<item key="contextSelector.size.y" value="336"/>
 	</section>
@@ -178,5 +178,7 @@
 		<item key="ThrowRuntimeExceptions" value="false"/>
 		<item key="GenerateJavadoc" value="false"/>
 		<item key="AccessModifier" value="2"/>
+	</section>
+	<section name="BreadcrumbItemDropDown">
 	</section>
 </section>

@@ -1,8 +1,0 @@
-package com.training.dto.exception;
-
-public class VisitorNotFoundException extends Exception {
-
- public	VisitorNotFoundException(String message){
-		super(message);
-	}
-}

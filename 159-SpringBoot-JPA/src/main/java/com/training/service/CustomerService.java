@@ -1,11 +1,13 @@
 package com.training.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.training.db.CustomerRepository;
+import com.training.exception.CustomerNotFoundException;
 import com.training.model.Customer;
 @Service
 public class CustomerService {
@@ -20,12 +22,17 @@ public class CustomerService {
 	}
 	
 
-	public Customer updateCustomer(Customer customer) {
+	public Customer updateCustomer(Customer customer)throws CustomerNotFoundException  {
+		
 		return repo.save(customer);
 	}
 
-	public Customer getCustomerById(int customerId) {
-		return repo.findById(customerId).orElse(null);
+	public Customer getCustomerById(int customerId) throws CustomerNotFoundException {
+		Optional<Customer> cust=repo.findById(customerId);
+		if(cust.isPresent()) {
+			cust.get();
+		}
+		return repo.findById(customerId).orElseThrow(()-> new CustomerNotFoundException("Customer Not Found"));
 	}
 
 	public List<Customer> getAllCustomers() {
@@ -33,8 +40,10 @@ public class CustomerService {
 	}
 
 	public boolean deleteCustomer(Customer customer) {
+	
 		repo.delete(customer);
-		if (!repo.existsById(customer.getId())) {
+		boolean existsById = repo.existsById(customer.getId());
+		if (!existsById) {
 
 			return true;
 		}
