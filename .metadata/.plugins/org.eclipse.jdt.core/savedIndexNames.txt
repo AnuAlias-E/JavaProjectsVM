@@ -146,7 +146,6 @@ INDEX VERSION 1.134+C:\JavaProjects_AnuAlias\.metadata\.plugins\org.eclipse.jdt.
 33404814.index
 2650646571.index
 3149636946.index
-2966735536.index
 938695833.index
 4126429649.index
 3382612391.index
